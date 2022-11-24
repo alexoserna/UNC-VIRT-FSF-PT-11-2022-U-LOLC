@@ -22,6 +22,10 @@ h2 {
   font-size: 250%;
 }
 
+h3{
+  font-size: 200%;
+}
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -88,6 +92,13 @@ footer {
 }
 
 /* TODO: Add styles to display and hide the resource links */
+.resources ul {
+  display: none;
+}
+
+.resources:hover ul{
+  display: block;
+}
 
 @media screen and (max-width: 768px) {
   header, main {
