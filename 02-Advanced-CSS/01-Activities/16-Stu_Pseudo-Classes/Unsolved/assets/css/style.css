@@ -92,6 +92,10 @@ footer {
 }
 
 /* TODO: Add styles to display and hide the resource links */
+.resources{
+  display: inline-block;
+}
+
 .resources ul {
   display: none;
 }
