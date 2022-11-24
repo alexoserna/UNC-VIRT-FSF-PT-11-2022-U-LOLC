@@ -96,6 +96,10 @@ footer {
   display: inline-block;
 }
 
+.resources:hover{
+  display: block;
+}
+
 .resources ul {
   display: none;
 }
