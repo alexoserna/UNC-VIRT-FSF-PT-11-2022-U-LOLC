@@ -77,7 +77,8 @@ article p {
   border-radius: 6px;
  
   /* Position the tooltip text - see examples below! */
-position: absolute;
+  position: absolute;
+
 
 }
 
