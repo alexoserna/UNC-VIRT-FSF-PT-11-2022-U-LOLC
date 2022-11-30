@@ -1,0 +1,110 @@
+/*
+    Create commonly referenced variables
+*/
+:root{
+    --purple: rgb(226, 84, 226);
+    --darkpurple: rgb(170, 77, 170);
+    --white: #ffffff;
+    --darkslate:  rgb(58, 62, 70);
+}
+
+/*
+    Adjusting broad page values
+*/
+
+body{
+    background-color: var(--darkslate);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color:var(--purple);
+}
+
+h2{
+    color: var(--purple);
+    padding: 5px;
+}
+
+footer{
+    text-align: center;
+}
+
+/*
+    Creating intro styling
+*/
+
+#intro p{
+    color: var(--white);
+    text-align: center;
+}
+
+/*
+    Creating and formatting card styling
+*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+
+.card{
+    border: 1px dashed var(--white);
+    width: 30%;
+}
+
+.card p {
+    color:var(--darkpurple);
+    margin: 10px;
+}
+
+.card-header {
+    /*Positioning*/
+    margin: auto;
+    margin-top:-20px;
+    position:relative;
+    /*Styling*/
+    border: 1px solid var(--white);
+    background-color: var(--darkslate);
+    border-radius: 5px;
+    width: 90%;
+}
+
+/*
+    Creating code-card
+*/
+
+.code-card code{
+    margin: 10px;
+    background-image:linear-gradient(
+                            rgba(232, 102, 236, 0.3),
+                            rgba(232, 102, 236, 0.6)
+                        );
+    border-radius: 5px;
+    display: block;
+    padding: 20px;
+    font-family: monospace;
+    white-space: pre-line;
+}
+
+code {
+    color: var(--white);
+}
+
+/*
+    Creating glow
+*/
+
+.card, .card .card-header{
+    transition:all 0.5s ease-in-out;
+}
+
+.card:hover, .card:hover .card-header{
+    box-shadow:inset 0px 0px 8px
+        rgba(232, 102, 236, 1), 0 0 15px
+        rgba(232, 102, 236, 1)                        
+}
