@@ -1,11 +1,19 @@
 var repoList = document.querySelector('ul');
 var fetchButton = document.getElementById('fetch-button');
 
+// const octokit = new Octokit({
+//   auth: ''
+// })
+
+// await octokit.request('GET /users/{alexoserna}/repos{?type,sort,direction,per_page,page}', {
+//   username: 'alexoserna'
+// })
+
 //getApi function is called when the fetchButton is clicked
 
 function getApi() {
   // Insert the API url to get a list of your repos
-  var requestUrl = '';
+  var requestUrl = 'https://api.github.com/users/alexoserna/repos';
 
   fetch(requestUrl)
     .then(function (response) {
@@ -24,6 +32,8 @@ function getApi() {
         repoList.appendChild(listItem);
       }
     });
+
+    console.log('button pressed');
 }
 
 fetchButton.addEventListener('click', getApi);
