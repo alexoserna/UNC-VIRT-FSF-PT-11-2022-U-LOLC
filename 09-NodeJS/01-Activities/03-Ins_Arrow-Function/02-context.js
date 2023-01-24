@@ -4,9 +4,9 @@
 
 var person = {
   name: "Hodor",
-  saySomething: function() {
+  saySomething: function () {
     console.log(this.name + " is thinking...");
-    setTimeout(function() {
+    setTimeout(function () {
       console.log(this.name + "!");
     }, 100);
   }
@@ -19,7 +19,7 @@ person.saySomething(); // prints "Hodor is thinking..."
 // i.e. whatever `this` is where it's created
 var person = {
   name: "Hodor",
-  saySomething: function() {
+  saySomething: function () {
     console.log(this.name + " is thinking...");
     setTimeout(() => console.log(this.name + "!"), 100);
   }
